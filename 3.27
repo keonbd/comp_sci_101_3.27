@@ -1,0 +1,24 @@
+''' Read in first equation, ax + by = c '''
+a = int(input())
+b = int(input())
+c = int(input())
+x = 0
+y = 0
+i = 0
+j = 0
+d = int(input())
+e = int(input())
+f = int(input())
+if a != c:
+    for x in range(-10,11):
+        for y in range(-10,11):
+            if (a * x) + (b *y) == c and (d * x) + (e * y) == f:
+                print('x =', x, ', y =', y)
+                i = x
+                j = y
+                break     
+#print(i, j)
+#else:
+#    print('There is no solution')  
+if i == 0 and j == 0:        
+    print('There is no solution')    
